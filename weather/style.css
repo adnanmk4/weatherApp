@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: linear-gradient(to right, #0e0e0e, #1a1a1a);
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+#hh {
+  font-family: 'Pacifico', cursive;
+  width: 20%;
+  text-align: center;
+  margin-bottom: 10px;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards 0.5s;
+}
+
+input {
+  width: 60%;
+  padding: 10px;
+  outline: none;
+  border: 2px solid cyan;
+  color: cyan;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: border-color 0.3s ease, background 0.3s ease, transform 0.3s ease;
+}
+
+input:focus {
+  border-color: #66c2ff;
+  background: #333;
+  transform: scale(1.01);
+}
+
+button {
+  padding: 10px;
+  outline: none;
+  border: 2px solid cyan;
+  color: #fff;
+  border-radius: 10px;
+  background: #333;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background: #555;
+  transform: scale(1.02);
+}
+
+#cityName {
+  color: cyan;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards 0.5s;
+}
+
+#temp {
+  font-size: 1.2em;
+  border-top: 1px solid cyan;
+  padding-top: 10px;
+  margin-top: 30px;
+
+  opacity: 0;
+  animation: fadeIn 1s ease forwards 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

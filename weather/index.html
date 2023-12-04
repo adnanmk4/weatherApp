@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather APP</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="manifest" href="manifest.json" />
+
+  <link rel="apple-touch-icon" href="assets/icons/icon-72x72.png" />
+  <link rel="apple-touch-icon" href="assets/icons/icon-96x96.png" />
+  <link rel="apple-touch-icon" href="assets/icons/icon-128x128.png" />
+  <link rel="apple-touch-icon" href="assets/icons/icon-144x144.png" />
+  <link rel="apple-touch-icon" href="assets/icons/icon-152x152.png" />
+  <link rel="apple-touch-icon" href="assets/icons/icon-192x192.png" />
+  <link rel="apple-touch-icon" href="assets/icons/icon-384x384.png" />
+  <link rel="apple-touch-icon" href="assets/icons/icon-512x512.png" />
+  <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
+  <meta name="theme-color" content="#db4938" />
+
+</head>
+
+<body>
+
+  <center>
+
+    <h1 id="hh">weather app</h1>
+
+    <input placeholder="Enter your city... " id="placeName" type="text">
+    <button onclick="showWeather()" id="search1">search</button>
+
+    <div id="show">
+
+      <h2 id="cityName"></h2>
+
+      <h3 id="temp"></h3>
+      <h3 id="hum"></h3>
+      <h3 id="feels"></h3>
+
+    </div>
+
+  </center>
+
+  <script src="serviceWorker.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
